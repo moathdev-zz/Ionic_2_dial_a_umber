@@ -9,12 +9,19 @@ Access to **tel:*** is already present in the config.xml file for Ionic 2. If no
 in your **ts file** :
 
 ````
-callIT(mobile){
+import ...
+
+declare let window;
+
+export class MoathdevPage {
+
+call(mobile){
     //You can add some logic here
     mobile = encodeURIComponent(mobile);
      window.location = "tel:"+mobile;
     }
     
+}    
 ````
 
 
